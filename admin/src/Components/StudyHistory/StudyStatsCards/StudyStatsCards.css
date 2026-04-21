@@ -1,0 +1,127 @@
+.study-stats-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.study-stat-card {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 22px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.04);
+  border: 1px solid #f1f5f9;
+  transition: all 0.25s ease;
+}
+
+.study-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.08);
+}
+
+.study-stat-icon-wrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 18px;
+  flex-shrink: 0;
+}
+
+.study-stat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.study-stat-label {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.study-stat-number {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1;
+  color: #0f172a;
+}
+
+.study-card-blue {
+  border-left: 5px solid #3b82f6;
+}
+.study-card-blue .study-stat-icon-wrapper {
+  background: #eff6ff;
+  color: #3b82f6;
+}
+
+.study-card-green {
+  border-left: 5px solid #10b981;
+}
+.study-card-green .study-stat-icon-wrapper {
+  background: #ecfdf5;
+  color: #10b981;
+}
+
+.study-card-purple {
+  border-left: 5px solid #8b5cf6;
+}
+.study-card-purple .study-stat-icon-wrapper {
+  background: #f5f3ff;
+  color: #8b5cf6;
+}
+
+.study-card-orange {
+  border-left: 5px solid #f59e0b;
+}
+.study-card-orange .study-stat-icon-wrapper {
+  background: #fffbeb;
+  color: #f59e0b;
+}
+
+.study-card-teal {
+  border-left: 5px solid #14b8a6;
+}
+.study-card-teal .study-stat-icon-wrapper {
+  background: #f0fdfa;
+  color: #0f766e;
+}
+
+.study-card-red {
+  border-left: 5px solid #ef4444;
+}
+.study-card-red .study-stat-icon-wrapper {
+  background: #fef2f2;
+  color: #ef4444;
+}
+
+@media (max-width: 1100px) {
+  .study-stats-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .study-stats-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .study-stat-card {
+    padding: 20px;
+  }
+
+  .study-stat-icon-wrapper {
+    width: 56px;
+    height: 56px;
+  }
+
+  .study-stat-number {
+    font-size: 28px;
+  }
+}

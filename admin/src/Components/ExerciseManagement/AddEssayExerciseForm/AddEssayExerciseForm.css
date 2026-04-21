@@ -1,0 +1,188 @@
+.add-essay-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(17, 24, 39, 0.6);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    animation: fadeInEssay 0.2s ease-out;
+}
+
+.add-essay-modal {
+    background-color: #ffffff;
+    width: 850px;
+    max-width: 95vw;
+    max-height: 90vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    animation: slideUpEssay 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+}
+
+.add-essay-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+    border-bottom: 1px solid #f3f4f6;
+    background-color: #fcfcfd;
+}
+
+.add-essay-header h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #208B8B; 
+    margin: 0;
+}
+
+.add-essay-close {
+    background: none;
+    border: none;
+    color: #9ca3af;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.add-essay-close:hover {
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+.add-essay-body {
+    padding: 24px 32px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px; 
+}
+
+/* Grids */
+.essay-grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+/* Form Groups */
+.essay-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.essay-form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.essay-req {
+    color: #ef4444;
+}
+
+.essay-form-group select,
+.essay-form-group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #1f2937;
+    background-color: #f9fafb;
+    outline: none;
+    transition: all 0.2s;
+    font-family: inherit;
+    line-height: 1.5;
+}
+
+.essay-form-group select:focus,
+.essay-form-group textarea:focus {
+    border-color: #208B8B;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(32, 139, 139, 0.1);
+}
+
+.essay-form-group select:disabled {
+    background-color: #f3f4f6;
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
+.essay-form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+.error-border {
+    border-color: #ef4444 !important;
+    background-color: #fef2f2 !important;
+}
+
+.essay-error-text {
+    font-size: 12px;
+    color: #ef4444;
+    font-weight: 500;
+    margin-top: 2px;
+}
+
+.add-essay-footer {
+    padding: 24px 32px;
+    border-top: 1px solid #f3f4f6;
+    background-color: #f9fafb;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.essay-btn-submit {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: none;
+    background-color: #208B8B;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(32, 139, 139, 0.25);
+}
+
+.essay-btn-submit:hover {
+    background-color: #156b6b;
+    box-shadow: 0 6px 16px rgba(32, 139, 139, 0.35);
+    transform: translateY(-2px);
+}
+
+.essay-btn-submit:active {
+    transform: translateY(0);
+}
+
+@keyframes fadeInEssay {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUpEssay {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

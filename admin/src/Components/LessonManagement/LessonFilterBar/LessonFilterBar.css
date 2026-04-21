@@ -1,0 +1,153 @@
+.lesson-filter-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 16px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+    border: 1px solid #f3f4f6;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/* Left section */
+.lesson-filter-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Dropdown Khối Lớp */
+.lesson-grade-wrapper {
+    position: relative;
+}
+
+.lesson-grade-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6b7280;
+    pointer-events: none;
+}
+
+.lesson-grade-select {
+    appearance: none;
+    padding: 10px 36px 10px 40px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px; 
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+    background-color: #f9fafb;
+    outline: none;
+    cursor: pointer;
+    min-width: 150px;
+    transition: all 0.2s;
+}
+
+.lesson-grade-select:hover {
+    border-color: #d1d5db;
+}
+
+.lesson-grade-select:focus {
+    background-color: #ffffff;
+    border-color: #34A853;
+    box-shadow: 0 0 0 3px rgba(52, 168, 83, 0.1);
+}
+
+.lesson-grade-wrapper::after {
+    content: '▼';
+    font-size: 10px;
+    color: #6b7280;
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* Search Input */
+.lesson-search-wrapper {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+}
+
+.lesson-search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+}
+
+.lesson-search-input {
+    width: 100%;
+    padding: 10px 14px 10px 40px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px; 
+    font-size: 14px;
+    outline: none;
+    background-color: #f9fafb;
+    transition: all 0.2s;
+    box-sizing: border-box;
+}
+
+.lesson-search-input:focus {
+    background-color: #ffffff;
+    border-color: #34A853;
+    box-shadow: 0 0 0 3px rgba(52, 168, 83, 0.1);
+}
+
+/* Right section */
+.lesson-filter-right {
+    display: flex;
+    align-items: center;
+}
+
+.lesson-add-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 18px;
+    background-color: #34A853; 
+    color: #ffffff;
+    border: none;
+    border-radius: 8px; 
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.lesson-add-btn:hover {
+    background-color: #278540;
+    box-shadow: 0 4px 12px rgba(52, 168, 83, 0.25);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .lesson-filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .lesson-filter-left {
+        flex-direction: column;
+        align-items: stretch;
+        min-width: 100%;
+    }
+
+    .lesson-search-wrapper, .lesson-grade-select {
+        max-width: 100%;
+    }
+
+    .lesson-filter-right {
+        justify-content: flex-end;
+    }
+}

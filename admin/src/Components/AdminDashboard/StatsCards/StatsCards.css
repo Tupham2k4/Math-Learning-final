@@ -1,0 +1,124 @@
+.stats-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  border: 1px solid #f3f4f6;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.stat-card-icon-container {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.stat-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-card-value-container {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.stat-card-value {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.2;
+}
+
+.stat-card-suffix {
+  font-size: 16px;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.stat-card-title {
+  margin: 0;
+  color: #6b7280;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Màu sắc cho các icon */
+.bg-green-light { background-color: #dcfce7; }
+.text-green { color: #16a34a; }
+
+.bg-teal-light { background-color: #ccfbf1; }
+.text-teal { color: #0d9488; }
+
+.bg-blue-light { background-color: #dbeafe; }
+.text-blue { color: #2563eb; }
+
+.bg-cyan-light { background-color: #cffafe; }
+.text-cyan { color: #0891b2; }
+
+.bg-yellow-light { background-color: #fef3c7; }
+.text-yellow { color: #d97706; }
+
+.bg-green-main-light { background-color: #e8f5e9; }
+.text-green-main { color: #34A853; }
+
+/* Trạng thái */
+.stats-cards-loading {
+  padding: 40px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 16px;
+  background: #ffffff;
+  border-radius: 16px;
+  margin-bottom: 30px;
+}
+
+.stats-cards-error {
+  padding: 20px;
+  color: #ef4444;
+  background-color: #fee2e2;
+  border-radius: 12px;
+  text-align: center;
+  margin-bottom: 30px;
+  border: 1px solid #fca5a5;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .stats-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-cards-container {
+    grid-template-columns: 1fr;
+  }
+}

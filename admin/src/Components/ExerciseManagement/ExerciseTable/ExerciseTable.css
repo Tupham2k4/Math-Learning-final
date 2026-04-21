@@ -1,0 +1,47 @@
+.exercise-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 12px;
+    background-color: transparent;
+    border: 1px solid #f3f4f6; 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+.exercise-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px; 
+}
+
+.exercise-table thead {
+    background-color: #f9fafb;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.exercise-table th {
+    padding: 16px 24px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 700;
+    color: #4b5563;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.exercise-table th.th-stt {
+    width: 60px;
+    text-align: center;
+}
+
+.exercise-table th.th-actions {
+    width: 140px;
+    text-align: center;
+}
+
+.exercise-table th.th-type {
+    width: 140px;
+}
+
+.exercise-table th.th-grade {
+    width: 120px;
+}

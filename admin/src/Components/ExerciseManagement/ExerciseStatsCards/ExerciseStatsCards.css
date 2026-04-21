@@ -1,0 +1,108 @@
+.exercise-stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.exercise-stat-card {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f3f4f6;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.exercise-stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.exercise-stat-icon-wrapper {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.exercise-stat-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.exercise-stat-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #6b7280;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.exercise-stat-number {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+    line-height: 1;
+}
+
+.card-blue {
+    border-left: 5px solid #3b82f6;
+}
+.card-blue .exercise-stat-icon-wrapper {
+    background-color: #eff6ff;
+    color: #3b82f6;
+}
+
+.card-green {
+    border-left: 5px solid #10b981;
+}
+.card-green .exercise-stat-icon-wrapper {
+    background-color: #ecfdf5;
+    color: #10b981;
+}
+
+.card-orange {
+    border-left: 5px solid #f59e0b;
+}
+.card-orange .exercise-stat-icon-wrapper {
+    background-color: #fffbeb;
+    color: #f59e0b;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    .exercise-stats-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .exercise-stats-container {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .exercise-stat-card {
+        padding: 20px;
+    }
+    
+    .exercise-stat-icon-wrapper {
+        width: 54px;
+        height: 54px;
+        margin-right: 16px;
+    }
+    
+    .exercise-stat-number {
+        font-size: 28px;
+    }
+}

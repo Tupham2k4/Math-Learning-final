@@ -1,0 +1,124 @@
+/* Row Base */
+.exercise-table-row {
+    border-bottom: 1px solid #f3f4f6;
+    transition: background-color 0.2s ease;
+}
+
+.exercise-table-row:hover {
+    background-color: #f9fafb;
+}
+
+.exercise-table-row td {
+    padding: 18px 24px;
+    vertical-align: middle;
+    color: #4b5563;
+    font-size: 14px;
+}
+
+/* STT */
+.exercise-cell-stt {
+    font-weight: 600;
+    color: #9ca3af;
+    width: 60px;
+    text-align: center;
+}
+
+/* Tên lesson */
+.exercise-name-text {
+    font-weight: 600;
+    color: #111827;
+}
+
+/* Khối lớp */
+.exercise-cell-grade {
+    white-space: nowrap;
+}
+
+.exercise-grade-badge {
+    background-color: #f3f4f6;
+    color: #374151;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+/* Chương */
+.exercise-cell-chapter {
+    color: #6b7280;
+}
+
+/* Loại bài tập (Type) */
+.exercise-type-badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+/* Biến thể màu cho Label */
+.exercise-badge-mcq {
+    background-color: #eff6ff;
+    color: #2563eb;
+    border: 1px solid #bfdbfe;
+}
+
+.exercise-badge-essay {
+    background-color: #fff1f2;
+    color: #e11d48;
+    border: 1px solid #fecdd3;
+}
+
+/* Thao tác (Actions) */
+.exercise-cell-actions {
+    text-align: center;
+}
+
+.exercise-actions-wrapper {
+    display: inline-flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.exercise-action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.action-view {
+    color: #6b7280;
+}
+
+.action-view:hover {
+    background-color: #eff6ff;
+    color: #3b82f6;
+}
+
+.action-edit {
+    color: #6b7280;
+}
+
+.action-edit:hover {
+    background-color: #fef3c7;
+    color: #d97706;
+}
+
+.action-delete {
+    color: #6b7280;
+}
+
+.action-delete:hover {
+    background-color: #fee2e2;
+    color: #ef4444;
+}

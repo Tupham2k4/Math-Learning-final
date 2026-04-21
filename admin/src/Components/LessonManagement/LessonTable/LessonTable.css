@@ -1,0 +1,41 @@
+.lesson-table-container {
+    background-color: #ffffff;
+    border-radius: 24px;
+    border: 1px solid #f3f4f6;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.lesson-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.lesson-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.lesson-table th {
+    background-color: #f9fafb; 
+    color: #4b5563;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 16px;
+    border-bottom: 1px solid #e5e7eb;
+    white-space: nowrap;
+}
+
+.lesson-table th:first-child {
+    border-top-left-radius: 12px;
+}
+
+.lesson-table th:last-child {
+    border-top-right-radius: 12px;
+}
+
+/* Center alignment for Thao tác column */
+.text-center {
+    text-align: center;
+}

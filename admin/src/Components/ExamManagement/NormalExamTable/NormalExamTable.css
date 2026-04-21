@@ -1,0 +1,72 @@
+.exam-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+.exam-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: left;
+}
+
+.exam-table th {
+    padding: 16px;
+    background-color: #f8fafc;
+    color: #475569;
+    font-weight: 600;
+    border-bottom: 1px solid #e2e8f0;
+    white-space: nowrap;
+}
+
+.exam-table th.th-stt {
+    width: 60px;
+    text-align: center;
+}
+
+.exam-table th.th-name {
+    width: 35%;
+}
+
+.exam-table th.th-grade {
+    width: 15%;
+}
+
+.exam-table th.th-chapter {
+    width: 25%;
+}
+
+.exam-table th.th-actions {
+    width: 120px;
+    text-align: center;
+}
+
+.empty-exam-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px;
+    color: #64748b;
+    text-align: center;
+}
+
+.empty-exam-img {
+    width: 120px;
+    margin-bottom: 16px;
+    opacity: 0.6;
+}
+
+.empty-exam-state h3 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    color: #334155;
+    font-weight: 600;
+}
+
+.empty-exam-state p {
+    margin: 0;
+    font-size: 14px;
+}

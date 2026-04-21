@@ -1,0 +1,76 @@
+.special-table-row .exam-category-badge {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.cat-vao10 {
+    background-color: #fef3c7;
+    color: #d97706;
+}
+
+.cat-thpt {
+    background-color: #fee2e2;
+    color: #ef4444;
+}
+
+.cat-hsg {
+    background-color: #e0e7ff;
+    color: #4f46e5;
+}
+
+.cat-thi_thu {
+    background-color: #f3e8ff;
+    color: #9333ea;
+}
+
+.cat-khac, .cat-default {
+    background-color: #f1f5f9;
+    color: #475569;
+}
+
+/* Cột hành động */
+.special-exam-action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px; 
+}
+
+.text-center {
+    justify-content: center;
+}
+
+.btn-action-view,
+.btn-action-edit, 
+.btn-action-delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    color: #6b7280; 
+}
+
+/* Hover đổi màu riêng biệt */
+.btn-action-view:hover {
+    background-color: #ecfdf5;
+    color: #10b981; 
+}
+
+.btn-action-edit:hover {
+    background-color: #eff6ff;
+    color: #3b82f6; 
+}
+
+.btn-action-delete:hover {
+    background-color: #fef2f2;
+    color: #ef4444; 
+}
+

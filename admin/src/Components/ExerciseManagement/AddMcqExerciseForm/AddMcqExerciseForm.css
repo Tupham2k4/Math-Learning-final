@@ -1,0 +1,256 @@
+.add-mcq-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(17, 24, 39, 0.6);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    animation: fadeInMcq 0.2s ease-out;
+}
+
+.add-mcq-modal {
+    background-color: #ffffff;
+    width: 850px;
+    max-width: 95vw;
+    max-height: 90vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    animation: slideUpMcq 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    overflow: hidden;
+}
+
+.add-mcq-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+    border-bottom: 1px solid #f3f4f6;
+    background-color: #fcfcfd;
+}
+
+.add-mcq-header h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #5CB65F; 
+    margin: 0;
+}
+
+.add-mcq-close {
+    background: none;
+    border: none;
+    color: #9ca3af;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.add-mcq-close:hover {
+    background-color: #f3f4f6;
+    color: #1f2937;
+}
+
+.add-mcq-body {
+    padding: 24px 32px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Grids */
+.mcq-grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+.mcq-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px 32px; 
+}
+
+.gap-col-24 {
+    gap: 24px;
+}
+
+/* Form Groups */
+.mcq-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+.mcq-form-group.row-flex {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px; 
+}
+
+.flex-1 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.mcq-form-group label, .mcq-group-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.mcq-req {
+    color: #ef4444;
+}
+
+.mcq-form-group select,
+.mcq-form-group input,
+.mcq-form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #1f2937;
+    background-color: #f9fafb;
+    outline: none;
+    transition: all 0.2s;
+    font-family: inherit;
+}
+
+.mcq-form-group select:focus,
+.mcq-form-group input:focus,
+.mcq-form-group textarea:focus {
+    border-color: #5CB65F;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 4px rgba(92, 182, 95, 0.1);
+}
+
+.mcq-form-group select:disabled {
+    background-color: #f3f4f6;
+    color: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* Option letter*/
+.mcq-option-letter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: #f3f4f6;
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+    font-weight: 700;
+    color: #4b5563;
+    font-size: 16px;
+}
+
+/* Error States */
+.error-border {
+    border-color: #ef4444 !important;
+    background-color: #fef2f2 !important;
+}
+
+.mcq-error-text {
+    font-size: 12px;
+    color: #ef4444;
+    font-weight: 500;
+    margin-top: 2px;
+}
+
+.correct-answer-selector {
+    display: flex;
+    gap: 12px;
+    height: 44px; 
+}
+
+.ans-btn {
+    flex: 1;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #6b7280;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.ans-btn:hover {
+    border-color: #5CB65F;
+    color: #5CB65F;
+    background-color: #f0fdf4;
+}
+
+.ans-btn.active {
+    background-color: #5CB65F;
+    border-color: #5CB65F;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(92, 182, 95, 0.3);
+}
+
+/* Footer & Submit Button */
+.add-mcq-footer {
+    padding: 24px 32px;
+    border-top: 1px solid #f3f4f6;
+    background-color: #f9fafb;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.mcq-btn-submit {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    border: none;
+    background-color: #5CB65F;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(92, 182, 95, 0.25);
+}
+
+.mcq-btn-submit:hover {
+    background-color: #4da350;
+    box-shadow: 0 6px 16px rgba(92, 182, 95, 0.35);
+    transform: translateY(-2px);
+}
+
+.mcq-btn-submit:active {
+    transform: translateY(0);
+}
+
+@keyframes fadeInMcq {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUpMcq {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

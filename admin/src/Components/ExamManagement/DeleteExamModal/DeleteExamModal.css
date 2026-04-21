@@ -1,0 +1,130 @@
+.delete-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1050;
+}
+
+.delete-modal-content {
+    background-color: white;
+    width: 100%;
+    max-width: 360px;
+    border-radius: 16px;
+    padding: 32px 24px 24px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: scaleIn 0.2s ease-out;
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.delete-modal-close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: none;
+    border: none;
+    color: #94a3b8;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 6px;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-modal-close-btn:hover {
+    background-color: #f1f5f9;
+    color: #475569;
+}
+
+.delete-modal-icon-wrapper {
+    background-color: #fef2f2;
+    color: #ef4444;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 16px;
+}
+
+.delete-modal-content h3 {
+    margin: 0 0 12px 0;
+    font-size: 20px;
+    color: #1e293b;
+    font-weight: 600;
+}
+
+.delete-modal-content p {
+    margin: 0 0 24px 0;
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.delete-modal-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.delete-modal-cancel-btn {
+    flex: 1;
+    padding: 12px;
+    background-color: #f1f5f9;
+    color: #475569;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.delete-modal-cancel-btn:hover {
+    background-color: #e2e8f0;
+    color: #1e293b;
+}
+
+.delete-modal-confirm-btn {
+    flex: 1;
+    padding: 12px;
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.4);
+}
+
+.delete-modal-confirm-btn:hover {
+    background-color: #dc2626;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 8px -1px rgba(239, 68, 68, 0.4);
+}
+
+.delete-modal-confirm-btn:active {
+    transform: translateY(0);
+}

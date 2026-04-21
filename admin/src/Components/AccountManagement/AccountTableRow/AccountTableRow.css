@@ -1,0 +1,103 @@
+.account-table-row {
+    transition: background-color 0.2s ease;
+}
+
+.account-table-row:hover {
+    background-color: #f9fafb;
+}
+
+.account-table-row td {
+    padding: 16px;
+    font-size: 14px;
+    color: #374151;
+    border-bottom: 1px solid #f3f4f6;
+    vertical-align: middle;
+}
+
+.account-table-row:last-child td {
+    border-bottom: none;
+}
+
+.account-name-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.account-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #f3e8ff;
+    color: #9333ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.account-name-text {
+    font-weight: 600;
+    color: #111827;
+}
+
+.role-badge {
+    display: inline-flex;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.role-admin-badge {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+.role-user-badge {
+    background-color: #e0f2fe;
+    color: #0369a1;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.text-center {
+    justify-content: center;
+}
+
+.btn-action-edit, .btn-action-delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.btn-action-edit {
+    color: #4b5563;
+}
+
+.btn-action-edit:hover {
+    background-color: #eff6ff;
+    color: #2563eb;
+}
+
+.btn-action-delete {
+    color: #4b5563;
+}
+
+.btn-action-delete:hover {
+    background-color: #fef2f2;
+    color: #dc2626;
+}

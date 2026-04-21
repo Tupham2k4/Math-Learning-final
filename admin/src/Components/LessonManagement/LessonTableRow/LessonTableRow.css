@@ -1,0 +1,88 @@
+.lesson-table-row {
+    transition: background-color 0.2s ease;
+}
+
+.lesson-table-row:hover {
+    background-color: #f9fafb; 
+}
+
+.lesson-table-row td {
+    padding: 16px;
+    font-size: 14px;
+    color: #374151;
+    border-bottom: 1px solid #f3f4f6;
+    vertical-align: middle;
+}
+
+.lesson-table-row:last-child td {
+    border-bottom: none;
+}
+
+/* Tên bài giảng */
+.lesson-name-cell {
+    color: #111827;
+    font-weight: 600;
+}
+
+.lesson-name-text {
+    display: inline-block;
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
+/* Badge Khối lớp */
+.grade-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: #e0e7ff; 
+    color: #4f46e5;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+/* Cột hành động */
+.lesson-action-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px; 
+}
+
+.text-center {
+    justify-content: center;
+}
+
+.btn-action-view,
+.btn-action-edit, 
+.btn-action-delete {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    color: #6b7280; 
+}
+
+/* Hover đổi màu riêng biệt */
+.btn-action-view:hover {
+    background-color: #ecfdf5;
+    color: #10b981; 
+}
+
+.btn-action-edit:hover {
+    background-color: #eff6ff;
+    color: #3b82f6; 
+}
+
+.btn-action-delete:hover {
+    background-color: #fef2f2;
+    color: #ef4444; 
+}

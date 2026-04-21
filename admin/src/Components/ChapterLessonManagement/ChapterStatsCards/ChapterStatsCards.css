@@ -1,0 +1,88 @@
+.chapter-stats-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.chapter-stat-card {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  border: 1px solid #f3f4f6;
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+  position: relative;
+}
+
+.chapter-stat-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.chapter-stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+}
+
+.chapter-stat-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.chapter-stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.chapter-stat-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: #6b7280;
+  margin: 0 0 8px 0;
+}
+
+.chapter-stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+  line-height: 1;
+}
+
+.chapter-card-purple::before {
+  background-color: #8b5cf6;
+}
+.chapter-card-purple .chapter-stat-icon-wrapper {
+  background-color: #ede9fe;
+  color: #8b5cf6;
+}
+
+.chapter-card-green::before {
+  background-color: #10b981;
+}
+.chapter-card-green .chapter-stat-icon-wrapper {
+  background-color: #d1fae5;
+  color: #10b981;
+}
+
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .chapter-stats-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

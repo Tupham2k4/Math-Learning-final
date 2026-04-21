@@ -1,0 +1,285 @@
+.submission-table-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+  border: 1px solid #f3f4f6;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.submission-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.submission-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  min-width: 900px;
+}
+
+.submission-table th,
+.submission-table td {
+  padding: 16px;
+  border-bottom: 1px solid #f3f4f6;
+  vertical-align: middle;
+}
+
+.submission-table th {
+  background-color: #f9fafb;
+  font-weight: 600;
+  font-size: 13px;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.submission-row {
+  transition: background-color 0.2s ease;
+}
+
+.submission-row:hover {
+  background-color: #fdfdfd;
+}
+
+/* Col widths */
+.st-col-id {
+  width: 5%;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+}
+.st-col-name {
+  width: 15%;
+  font-weight: 500;
+  color: #111827;
+}
+.st-col-lesson {
+  width: 15%;
+  color: #374151;
+  font-weight: 500;
+}
+.st-col-grade {
+  width: 8%;
+  color: #4b5563;
+}
+.st-col-type {
+  width: 15%;
+}
+.st-col-score {
+  width: 8%;
+  text-align: center;
+  color: #dc2626;
+  font-weight: 600;
+}
+.st-col-status {
+  width: 12%;
+  text-align: center;
+}
+.st-col-date {
+  width: 12%;
+  font-size: 13px;
+  color: #6b7280;
+}
+.st-col-actions {
+  width: 10%;
+  text-align: center;
+}
+
+/* Badges */
+.type-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.type-mcq {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.type-essay {
+  background-color: #f3e8ff;
+  color: #7e22ce;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status-graded {
+  background-color: #d1fae5;
+  color: #059669;
+}
+
+.status-pending {
+  background-color: #fef3c7;
+  color: #d97706;
+}
+
+/* Buttons */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.action-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: none;
+  color: #6b7280;
+}
+
+.action-btn svg,
+.page-btn svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+  stroke: currentColor;
+  fill: none;
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn-view {
+  color: #6b7280;
+}
+.btn-view:hover {
+  background-color: #ecfdf5;
+  color: #10b981;
+}
+
+.btn-grade {
+  color: #6b7280;
+}
+.btn-grade:hover {
+  background-color: #eff6ff;
+  color: #3b82f6;
+}
+
+.btn-delete {
+  color: #6b7280;
+}
+.btn-delete:hover {
+  background-color: #fef2f2;
+  color: #ef4444;
+}
+
+/* Empty state */
+.submission-empty {
+  text-align: center;
+  padding: 48px;
+}
+
+.empty-message p {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* Pagination */
+.submission-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  border-top: 1px solid #f3f4f6;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.pagination-info {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.page-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  background-color: #fff;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.page-btn:hover:not(:disabled) {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.page-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  color: #9ca3af;
+}
+
+.page-numbers {
+  display: flex;
+  gap: 4px;
+}
+
+.page-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  background-color: transparent;
+  color: #4b5563;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.page-number:hover:not(.active) {
+  background-color: #f3f4f6;
+}
+
+.page-number.active {
+  background-color: #eff6ff;
+  color: #2563eb;
+  border-color: #bfdbfe;
+  font-weight: 600;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .submission-pagination {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}

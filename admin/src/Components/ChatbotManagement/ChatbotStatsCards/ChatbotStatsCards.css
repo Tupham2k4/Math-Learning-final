@@ -1,0 +1,144 @@
+.chatbot-stats-container {
+    margin-bottom: 24px;
+}
+
+.stats-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.chatbot-stat-card {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f3f4f6;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.chatbot-stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.chatbot-stat-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+}
+
+.stat-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.stat-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.stat-title {
+    font-size: 15px;
+    font-weight: 500;
+    color: #6b7280;
+    margin: 0 0 8px 0;
+}
+
+.stat-value {
+    font-size: 32px;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+    line-height: 1;
+}
+
+/* Color Variants */
+.purple-card::before {
+    background-color: #8b5cf6;
+}
+.purple-card .stat-icon-wrapper {
+    background-color: #ede9fe;
+    color: #8b5cf6;
+}
+
+.green-card::before {
+    background-color: #10b981;
+}
+.green-card .stat-icon-wrapper {
+    background-color: #d1fae5;
+    color: #10b981;
+}
+
+.blue-card::before {
+    background-color: #3b82f6;
+}
+.blue-card .stat-icon-wrapper {
+    background-color: #eff6ff;
+    color: #3b82f6;
+}
+
+.stats-chart-section {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f3f4f6;
+}
+
+.stats-chart-section h3 {
+    margin: 0 0 24px 0;
+    font-size: 18px;
+    color: #1e293b;
+    font-weight: 600;
+}
+
+.chart-wrapper {
+    width: 100%;
+}
+
+.empty-chart {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 2px dashed #e2e8f0;
+}
+
+.stats-cards-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    height: 150px;
+    color: #64748b;
+}
+
+.stats-cards-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    height: 150px;
+    color: #ef4444;
+    background: #fef2f2;
+    border-radius: 12px;
+    margin-bottom: 24px;
+}

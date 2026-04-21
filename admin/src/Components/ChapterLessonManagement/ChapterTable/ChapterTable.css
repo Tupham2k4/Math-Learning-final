@@ -1,0 +1,232 @@
+.chapter-table-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.chapter-table-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  border: 1px solid #f3f4f6;
+  overflow: hidden;
+  width: 100%;
+}
+
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.chapter-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: left;
+}
+
+.chapter-table th {
+  background-color: #f9fafb;
+  color: #4b5563;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 16px 20px;
+  border-bottom: 2px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+.chapter-table td {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #374151;
+  border-bottom: 1px solid #f3f4f6;
+  transition: background-color 0.2s;
+  vertical-align: middle;
+}
+
+.chapter-table tbody tr:hover td {
+  background-color: #f8fafc;
+}
+
+.chapter-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.chapter-title-cell {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Các badge (Nhãn khối lớp) */
+.grade-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #f0fdf4;
+  color: #16a34a;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #bbf7d0;
+}
+
+/* Hành động (Sửa, Xóa) */
+.text-center {
+  text-align: center;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-edit, .btn-delete {
+  background: none;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-edit {
+  color: #3b82f6; 
+  background-color: #eff6ff;
+}
+
+.btn-edit:hover {
+  background-color: #bfdbfe;
+  color: #1d4ed8;
+}
+
+.btn-delete {
+  color: #ef4444; 
+  background-color: #fef2f2;
+}
+
+.btn-delete:hover {
+  background-color: #fecaca;
+  color: #b91c1c;
+}
+
+/* Empty & Loading States */
+.chapter-table-loading, .empty-table-msg {
+  padding: 40px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+/* Phân trang (Pagination) */
+.pagination-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+  border: 1px solid #f3f4f6;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.pagination-info {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.pagination-info span {
+  font-weight: 600;
+  color: #111827;
+}
+
+.pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.page-btn {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  color: #374151;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.page-btn:hover:not(:disabled) {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.page-btn:disabled {
+  color: #9ca3af;
+  background-color: #f9fafb;
+  cursor: not-allowed;
+}
+
+.page-numbers {
+  display: flex;
+  gap: 4px;
+}
+
+.page-num-btn {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: #4b5563;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.page-num-btn:hover:not(.active) {
+  background-color: #f3f4f6;
+}
+
+.page-num-btn.active {
+  background-color: #34A853;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.pagination-ellipsis {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0 4px 6px 4px;
+  color: #9ca3af;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .chapter-table td, .chapter-table th {
+    padding: 12px 10px;
+  }
+  
+  .pagination-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}

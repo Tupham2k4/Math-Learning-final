@@ -1,0 +1,141 @@
+.account-table-container {
+    background-color: #ffffff;
+    border-radius: 24px;
+    border: 1px solid #f3f4f6;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.account-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.account-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.account-table th {
+    background-color: #f9fafb;
+    color: #4b5563;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 16px;
+    border-bottom: 1px solid #e5e7eb;
+    white-space: nowrap;
+}
+
+.account-table th:first-child {
+    border-top-left-radius: 12px;
+}
+
+.account-table th:last-child {
+    border-top-right-radius: 12px;
+}
+
+.account-table td {
+    padding: 16px;
+    font-size: 14px;
+    color: #374151;
+    border-bottom: 1px solid #f3f4f6;
+    vertical-align: middle;
+}
+
+.account-table tbody tr {
+    transition: background-color 0.2s;
+}
+
+.account-table tbody tr:hover {
+    background-color: #f9fafb; 
+}
+
+.account-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.account-name-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.account-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #ede9fe;
+    color: #8b5cf6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+}
+
+.account-name-text {
+    font-weight: 600;
+    color: #111827;
+}
+
+.role-badge {
+    display: inline-flex;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.role-admin {
+    background-color: #fef3c7;
+    color: #d97706;
+}
+
+.role-user {
+    background-color: #d1fae5;
+    color: #059669;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-edit-account, .btn-delete-account {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+.btn-edit-account {
+    color: #3b82f6;
+    background-color: #eff6ff;
+}
+
+.btn-edit-account:hover {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+
+.btn-delete-account {
+    color: #ef4444;
+    background-color: #fef2f2;
+}
+
+.btn-delete-account:hover {
+    background-color: #fee2e2;
+    color: #dc2626;
+}
