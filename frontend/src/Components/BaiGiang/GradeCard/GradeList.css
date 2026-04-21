@@ -1,0 +1,28 @@
+.grade-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 32px;
+}
+
+@media screen and (max-width: 1439px) {
+  .grade-grid {
+    gap: 20px;
+    padding: 24px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .grade-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .grade-grid {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+}
