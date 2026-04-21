@@ -1,0 +1,79 @@
+.exam-detail-page-header {
+  padding: 32px 40px;
+  margin-bottom: 20px;
+  background-color: #cde8ce;
+}
+.breadcrumb {
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.home-link {
+  color: #4b8438;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.home-link:hover {
+  text-decoration: underline;
+}
+
+.separator {
+  margin: 0 6px;
+  font-size: 20px;
+  color: #4b8438;
+}
+.current {
+  color: #4b8437;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.exam-detail-page-header h1 {
+  margin: 0 0 8px 0;
+  font-size: 42px;
+  font-weight: 700;
+  color: #34a853;
+}
+
+.exam-detail-page-header p {
+  text-align: center;
+  margin: 0;
+  font-size: 20px;
+  color: #4b8437;
+}
+.exam-detail {
+  text-align: center;
+  font-size: 22px;
+}
+@media (max-width: 768px) {
+  .exam-detail-page-header {
+    padding: 24px;
+  }
+
+  .exam-detail-page-header h1 {
+    font-size: 32px;
+  }
+
+  .exam-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    border-top: 1px solid #4b8438;
+  }
+
+  .exam-name {
+    font-size: 24px;
+    font-weight: 600;
+    color: #34a853;
+  }
+
+  .timer {
+    font-size: 20px;
+    color: red;
+    font-weight: 500;
+  }
+}

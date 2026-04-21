@@ -1,0 +1,136 @@
+.chat-input-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.chat-input-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 8px 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  gap: 12px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.chat-input-wrapper.math-mode {
+  border-color: #3A9D5D;
+  background-color: #fff;
+  box-shadow: 0 8px 30px rgba(58, 157, 93, 0.1);
+}
+
+.chat-input-wrapper:focus-within {
+  border-color: #3A9D5D;
+}
+
+.chat-textarea {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 8px 0;
+  resize: none;
+  max-height: 150px;
+  font-family: inherit;
+  font-size: 15px;
+  color: #2d3748;
+  line-height: 1.5;
+}
+
+.chat-textarea::placeholder {
+  color: #a0aec0;
+}
+
+.chat-input-btns {
+  display: flex;
+  gap: 8px;
+}
+
+.input-action-btn {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-action-btn:hover {
+  background-color: #f1f5f9;
+  color: #3A9D5D;
+}
+
+.fx-btn {
+  color: #3A9D5D;
+  background-color: #f0f7f2;
+}
+
+.send-btn {
+  background-color: #edf2f7;
+  color: #a0aec0;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: not-allowed;
+  transition: all 0.2s;
+}
+
+.send-btn.active {
+  background-color: #3A9D5D;
+  color: white;
+  cursor: pointer;
+}
+
+.chat-math-field {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 18px;
+  padding: 10px 0;
+  --caret-color: #3A9D5D;
+  --selection-background-color: rgba(58, 157, 93, 0.2);
+}
+
+.math-mode-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #3A9D5D;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  width: fit-content;
+  align-self: flex-start;
+  animation: slideInUp 0.3s ease-out;
+}
+
+@keyframes slideInUp {
+  from { transform: translateY(10px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.close-math-btn {
+  background: none;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 2px;
+}

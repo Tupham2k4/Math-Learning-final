@@ -1,0 +1,434 @@
+/* DangKy.css */
+
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.dang-ky {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #cde8ce;
+  padding: 40px 80px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  position: relative;
+}
+
+/* ===== LOGO ===== */
+.dang-ky .logo {
+  position: absolute;
+  top: 40px;
+  left: 80px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  z-index: 10;
+}
+
+.dang-ky .logo img {
+  width: 109px;
+  height: 109px;
+}
+
+.dang-ky .logo h1 {
+  color: #34a853;
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+/* ===== LEFT CONTENT ===== */
+.left-column {
+  flex: 1;
+  max-width: 700px;
+  margin-left: 0;
+  margin-top: 140px;
+  padding-right: 20px;
+}
+
+.register-left h1 {
+  font-size: 36px;
+  color: #34a853;
+  font-weight: 800;
+  line-height: 1.2;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.register-left p {
+  font-size: 16px;
+  color: #4b8437;
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Features List */
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.feature-item img {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.feature-item p {
+  font-size: 15px;
+  color: #4b8437;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ===== RIGHT REGISTER BOX ===== */
+.register-right {
+  flex: 1;
+  max-width: 800px;
+  min-width: 768px;
+  background-color: #ffffff;
+  border-radius: 28px;
+  padding: 50px 50px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+  margin-right: 80px;
+  margin-top: 80px;
+}
+
+.register-right h1 {
+  color: #34a853;
+  font-size: 32px;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+
+.register-subtitle {
+  display: none;
+}
+
+/* Input Groups */
+.register-right .input-group {
+  margin-bottom: 20px;
+}
+
+.register-right .input-group label {
+  display: block;
+  font-size: 16px;
+  color: #4b8437;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.register-right .input-group input {
+  width: 100%;
+  height: 55px;
+  border-radius: 14px;
+  border: none;
+  outline: none;
+  background-color: #e8f0fe;
+  padding: 0 20px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.register-right .input-group input:focus {
+  border: 2px solid #4b8437;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+.register-right .input-group input::placeholder {
+  color: #aaa;
+  font-size: 15px;
+}
+
+/* Password Wrapper */
+.password-wrapper {
+  position: relative;
+}
+
+.view-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.view-icon:hover {
+  opacity: 1;
+}
+
+/* Register Button */
+.register-btn {
+  width: 100%;
+  height: 58px;
+  background: linear-gradient(135deg, #66bb6a 0%, #43a047 100%);
+  border: none;
+  border-radius: 14px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
+  letter-spacing: 0.5px;
+}
+
+.register-btn:hover {
+  background: linear-gradient(135deg, #43a047 0%, #2e9e4d 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(76, 175, 80, 0.5);
+}
+
+/* Divider */
+.divider {
+  display: none;
+}
+
+/* Login Link */
+.login-text {
+  text-align: center;
+  color: #666;
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.login-link {
+  color: #2e9e4d;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.login-link:hover {
+  color: #2d8a44;
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1400px) {
+  .dang-ky {
+    padding: 40px 60px;
+    gap: 40px;
+  }
+
+  .dang-ky .logo {
+    left: 60px;
+  }
+
+  .left-column {
+    margin-top: 140px;
+  }
+
+  .register-right {
+    margin-right: 40px;
+    max-width: 480px;
+    min-width: 450px;
+    padding: 45px 40px;
+  }
+
+  .register-left h1 {
+    font-size: 32px;
+  }
+
+  .dang-ky .logo img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .dang-ky .logo h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .dang-ky {
+    padding: 40px;
+    gap: 30px;
+  }
+
+  .dang-ky .logo {
+    left: 40px;
+  }
+
+  .left-column {
+    margin-top: 130px;
+  }
+
+  .register-right {
+    margin-right: 20px;
+    max-width: 450px;
+    min-width: 420px;
+    padding: 40px 35px;
+  }
+
+  .register-left h1 {
+    font-size: 30px;
+  }
+
+  .dang-ky .logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .dang-ky .logo h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .dang-ky {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 30px 20px;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .dang-ky .logo {
+    position: static;
+    margin-bottom: 20px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .left-column {
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: center;
+    width: 100%;
+    margin-top: 0;
+    padding-right: 0;
+  }
+
+  .register-left h1 {
+    font-size: 32px;
+  }
+
+  .features-list {
+    align-items: center;
+  }
+
+  .feature-item {
+    text-align: left;
+    max-width: 400px;
+  }
+
+  .register-right {
+    width: 100%;
+    max-width: 520px;
+    min-width: unset;
+    margin: 0 auto;
+    padding: 45px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dang-ky {
+    padding: 20px 15px;
+    gap: 25px;
+  }
+
+  .register-left h1 {
+    font-size: 28px;
+  }
+
+  .register-left p {
+    font-size: 15px;
+  }
+
+  .register-right {
+    padding: 35px 30px;
+  }
+
+  .register-right h1 {
+    font-size: 28px;
+  }
+
+  .register-right .input-group input {
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .register-btn {
+    height: 52px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .dang-ky .logo {
+    margin-bottom: 15px;
+  }
+
+  .dang-ky .logo img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .dang-ky .logo h1 {
+    font-size: 22px;
+  }
+
+  .register-left h1 {
+    font-size: 24px;
+  }
+
+  .register-left p {
+    font-size: 14px;
+  }
+
+  .feature-item p {
+    font-size: 14px;
+  }
+
+  .register-right {
+    padding: 30px 25px;
+    border-radius: 20px;
+  }
+
+  .register-right h1 {
+    font-size: 24px;
+  }
+
+  .register-right .input-group input {
+    height: 48px;
+  }
+
+  .register-btn {
+    height: 48px;
+    font-size: 16px;
+  }
+
+  .login-text {
+    font-size: 14px;
+  }
+}

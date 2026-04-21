@@ -1,0 +1,28 @@
+.exercise-detail-page {
+  min-height: 100vh;
+  background: #ffffff;
+}
+
+.exercise-detail-container {
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .exercise-detail-page {
+    padding: 16px;
+  }
+
+  .exercise-detail-container {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .exercise-detail-page {
+    padding: 12px;
+  }
+
+  .exercise-detail-container {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,144 @@
+.examquestions-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 32px;
+}
+.examquestions-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  padding: 32px;
+}
+
+@media screen and (max-width: 1439px) {
+  .examquestions-grid, .examquestions-grid-2 {
+    gap: 20px;
+    padding: 24px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .examquestions-grid, .examquestions-grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .examquestions-grid, .examquestions-grid-2 {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+}
+
+/* KhoDe grade card styles */
+.kho-grade-link {
+  text-decoration: none;
+  color: inherit;
+}
+.kho-grade-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition:
+    transform 0.18s ease,
+    box-shadow 0.18s ease;
+}
+.kho-grade-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.08);
+}
+.kho-grade-top {
+  padding: 16px;
+  color: #000;
+}
+.kho-grade-badge {
+  display: inline-block;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.kho-grade-top h3 {
+  margin: 6px 0;
+  font-size: 18px;
+}
+.kho-grade-top p {
+  margin: 0;
+  opacity: 0.8;
+  font-size: 14px;
+}
+.kho-grade-bottom {
+  padding: 12px 16px;
+  border-top: 1px solid #f1f1f1;
+}
+.kho-grade-lessons {
+  color: #666;
+  font-weight: 600;
+}
+
+/* Make QuestionList layout and cards match GradeCard style more closely */
+.examquestions-grid .kho-grade-card,
+.examquestions-grid-2 .kho-grade-card {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1023px) {
+  .examquestions-grid .kho-grade-card,
+  .examquestions-grid-2 .kho-grade-card {
+    height: auto;
+    aspect-ratio: auto;
+    min-height: 280px;
+  }
+}
+
+/* Ensure PDF exam items and buttons remain visible and styled */
+.pdf-exam-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 24px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  margin-bottom: 12px;
+  border: 1px solid #eaeaea;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.pdf-exam-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border-color: #5cb65f;
+}
+
+.btn-open-pdf {
+  padding: 10px 26px;
+  background-color: #5cb65f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-open-pdf:hover:not(.disabled) {
+  background-color: #4cae4f;
+  transform: scale(1.03);
+}
+
+.btn-open-pdf.disabled {
+  background-color: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}

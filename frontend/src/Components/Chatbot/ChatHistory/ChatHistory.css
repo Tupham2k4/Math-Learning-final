@@ -1,0 +1,99 @@
+.chat-history {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.new-chat-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3A9D5D;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.2s;
+  margin-bottom: 30px;
+}
+
+.new-chat-btn:hover {
+  background-color: #2e7d4a;
+  box-shadow: 0 4px 12px rgba(58, 157, 93, 0.2);
+}
+
+.plus-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.history-title {
+  font-size: 16px;
+  color: #2d3748;
+  margin-bottom: 15px;
+  padding-left: 5px;
+  font-weight: 700;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  overflow-y: auto;
+}
+
+.empty-history {
+  text-align: center;
+  color: #a0aec0;
+  padding: 40px 20px;
+  font-style: italic;
+  font-size: 14px;
+}
+
+.history-item {
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  transition: background-color 0.2s;
+}
+
+.history-item:hover {
+  background-color: #f0f7f2;
+}
+
+.history-item.active {
+  background-color: #e6f3eb;
+}
+
+.history-item-icon {
+  color: #3A9D5D;
+  margin-top: 2px;
+}
+
+.history-item-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4a5568;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.history-item-time {
+  font-size: 11px;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 4px;
+}

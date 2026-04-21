@@ -1,0 +1,171 @@
+.function {
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.function h1 {
+  text-align: center;
+  color: #34a853;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.function-subtitle {
+  text-align: center;
+  color: #4b8437;
+  font-size: 16px;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.function-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.function-item {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1;
+  min-width: 240px;
+  max-width: 280px;
+}
+
+.function-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.icon-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.icon-wrapper img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Icon background colors */
+.icon-book-bg {
+  background-color: #c8e6c9; /* Light green for Bài tập */
+}
+
+.icon-book2-bg {
+  background-color: #b3e5fc; /* Light blue for Bài giảng */
+}
+
+.icon-document-bg {
+  background-color: #e1bee7; /* Light purple for Kho đề */
+}
+
+.icon-video-bg {
+  background-color: #ffe0b2; /* Light orange for Video bài giảng */
+}
+
+.icon-chatbot-bg {
+  background-color: #c5e1a5; /* Light green for Chatbot */
+}
+
+.function-item h2 {
+  color: #34a853;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.function-item p {
+  color: #4b8437;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.function-click {
+  color: #4b8437;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.function-click:hover {
+  color: #34a853;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1400px) {
+  .function-item {
+    min-width: 220px;
+    max-width: 260px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .function-item {
+    min-width: 200px;
+    max-width: 240px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .function-container {
+    gap: 1rem;
+  }
+
+  .function-item {
+    min-width: calc(50% - 0.5rem);
+    max-width: calc(50% - 0.5rem);
+  }
+
+  .function h1 {
+    font-size: 28px;
+  }
+
+  .function-subtitle {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .function-item {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .function {
+    padding: 2rem 1rem;
+  }
+
+  .function h1 {
+    font-size: 24px;
+  }
+
+  .function-item {
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,41 @@
+.lesson-objective {
+  background: #dff0df;
+  border: 1px solid #c7e6c7;
+  border-radius: 10px;
+  padding: 16px 18px;
+}
+
+.lesson-section-title {
+  margin: 0 0 10px 0;
+  color: #1e7a1e;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.lesson-objective-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.lesson-objective-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #2c2c2c;
+  line-height: 1.4;
+}
+
+.lesson-objective-icon {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  object-fit: contain;
+}
+
+.lesson-objective-item .math-renderer p {
+  margin: 0 !important;
+}
+

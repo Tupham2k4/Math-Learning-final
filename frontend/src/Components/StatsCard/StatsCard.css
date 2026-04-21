@@ -1,0 +1,169 @@
+.stats-card {
+  padding: 4rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.stats-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 220px;
+  max-width: 280px;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card 1 - Học sinh */
+.stat-card-1 {
+  background-color: #cde8ce;
+}
+
+.stat-icon-1 {
+  background-color: #4b8438;
+}
+
+.stat-card-1 .stat-number,
+.stat-card-1 .stat-text {
+  color: #4b8438;
+}
+
+/* Card 2 - Bài tập */
+.stat-card-2 {
+  background-color: #e0f2f7;
+}
+
+.stat-icon-2 {
+  background-color: #26a69a;
+}
+
+.stat-card-2 .stat-number,
+.stat-card-2 .stat-text {
+  color: #26a69a;
+}
+
+/* Card 3 - Đề thi */
+.stat-card-3 {
+  background-color: #fff3e0;
+}
+
+.stat-icon-3 {
+  background-color: #ffb300;
+}
+
+.stat-card-3 .stat-number,
+.stat-card-3 .stat-text {
+  color: #ffb300;
+}
+
+/* Card 4 - Video bài giảng */
+.stat-card-4 {
+  background-color: #e8f5e9;
+}
+
+.stat-icon-4 {
+  background-color: #4caf50;
+}
+
+.stat-card-4 .stat-number,
+.stat-card-4 .stat-text {
+  color: #4caf50;
+}
+
+/* Card 5 - Bài giảng */
+.stat-card-5 {
+  background-color: #e8f5e9;
+}
+
+.stat-icon-5 {
+  background-color: #4caf50;
+}
+
+.stat-card-5 .stat-number,
+.stat-card-5 .stat-text {
+  color: #4caf50;
+}
+.stat-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.stat-icon-wrapper img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.stat-text {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .stat-card {
+    min-width: 200px;
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .stats-card-container {
+    gap: 1.5rem;
+  }
+
+  .stat-card {
+    min-width: calc(50% - 0.75rem);
+    max-width: calc(50% - 0.75rem);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .stats-card {
+    padding: 3rem 1rem;
+  }
+
+  .stat-card {
+    min-width: 100%;
+    max-width: 100%;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-text {
+    font-size: 1rem;
+  }
+}

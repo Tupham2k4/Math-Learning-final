@@ -1,0 +1,162 @@
+.question-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.question-card {
+  width: 350px;
+  height: 365px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.question-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.question-card-top {
+  padding: 18px;
+  border-radius: 18px 18px 12px 12px;
+  color: #000;
+  overflow: hidden;
+  flex: 1 1 auto;
+}
+
+.question-badge {
+  display: inline-block;
+  font-size: 15px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+}
+
+.question-card-top h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 6px 0;
+}
+
+.question-card-top p {
+  font-size: 18px;
+  line-height: 1.4;
+  opacity: 0.8;
+  max-height: calc(1.4em * 2);
+  overflow: hidden;
+}
+
+.question-bottom {
+  padding: 16px 18px 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.question-lessons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  color: #666;
+  margin: 8px 0 12px 0;
+  padding-left: 15px;
+}
+
+.lesson-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.question-button {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-question {
+  width: 65%;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.btn-question:hover {
+  filter: brightness(0.92);
+}
+
+.pdf-exam-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px 24px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  margin-bottom: 12px;
+  border: 1px solid #eaeaea;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.pdf-exam-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  border-color: #5cb65f;
+}
+
+.pdf-exam-title {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.exam-title-text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+
+.pdf-exam-action {
+  flex-shrink: 0;
+}
+
+.btn-open-pdf {
+  padding: 10px 26px;
+  background-color: #5cb65f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-open-pdf:hover:not(.disabled) {
+  background-color: #4cae4f;
+  transform: scale(1.05);
+}
+
+.btn-open-pdf.disabled {
+  background-color: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}

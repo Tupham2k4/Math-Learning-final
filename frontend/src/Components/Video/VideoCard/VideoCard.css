@@ -1,0 +1,151 @@
+/* Link bọc card */
+.video-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Card tổng */
+.video-card {
+  width: 100%;
+  min-height: 360px;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Phần trên */
+.video-card-top {
+  padding: 18px;
+  border-radius: 18px 18px 12px 12px;
+  color: #000;
+  position: relative;
+  flex-grow: 1;
+}
+
+/* Badge Lớp */
+.video-badge {
+  display: inline-block;
+  font-size: 15px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+}
+
+/* Tiêu đề */
+.video-card-top h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin: 6px 0;
+}
+
+/* Mô tả */
+.video-card-top p {
+  font-size: 18px;
+  opacity: 0.8;
+  line-height: 1.4;
+}
+
+/* Phần dưới */
+.video-bottom {
+  padding: 16px 18px 18px;
+  margin-top: auto;
+}
+
+/* Số bài */
+.video-lessons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 18px;
+  color: #666;
+  margin: 12px 0 14px 0;
+  padding-left: 15px;
+}
+
+.lesson-icon {
+  width: 22px;
+  height: 22px;
+}
+
+/* Button */
+.video-button {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 45px;
+}
+
+.btn-video {
+  flex: 0 0 63%;
+  max-width: 63%;
+  border: none;
+  outline: none;
+  padding: 8px 0;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: #f1f1f1;
+}
+.btn-video:hover {
+  filter: brightness(0.92);
+}
+
+@media screen and (max-width: 1023px) {
+  .video-card {
+    height: auto;
+    aspect-ratio: auto;
+    min-height: 280px;
+  }
+  .video-card-top h3 {
+    font-size: 22px;
+  }
+  .video-card-top p {
+    font-size: 15px;
+  }
+  .video-lessons {
+    font-size: 16px;
+    margin: 8px 0 10px 0;
+  }
+  .video-button {
+    margin-top: 40px;
+  }
+  .btn-video {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .video-card-top {
+    padding: 16px;
+  }
+  .video-bottom {
+    padding: 12px 16px 16px;
+  }
+  .video-card-top h3 {
+    font-size: 20px;
+  }
+  .video-card-top p {
+    font-size: 14px;
+  }
+  .video-button {
+    margin-top: 20px;
+  }
+}
