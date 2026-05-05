@@ -185,10 +185,10 @@ npm start
 ```bash
 cd admin
 npm install
-npm start
+npm run dev
 ```
 
-> Admin chạy tại: `http://localhost:3001` (hoặc port được assign tự động)
+> Admin chạy tại: `http://localhost:5173` 
 
 ---
 
