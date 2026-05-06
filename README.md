@@ -315,5 +315,5 @@ Dự án này được phát triển phục vụ mục đích học thuật (đ�
 ---
 
 <p align="center">
-  Made with ❤️ for Mathematics Education
+ Copyright by Pham Quang Tu - 11226675
 </p>
