@@ -133,6 +133,7 @@ cd Math-Learning-final
 ```bash
 cd backend
 npm install
+npm run server
 ```
 
 Tạo file `.env` trong thư mục `backend/`:
