@@ -161,10 +161,6 @@ FRONTEND_URL=http://localhost:3000
 
 Chạy backend:
 
-```bash
-# Production
-npm start
-
 # Development (hot reload)
 npm run server
 ```
